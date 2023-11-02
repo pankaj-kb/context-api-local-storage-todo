@@ -7,7 +7,11 @@ export const TodoContext = createContext({
             todoTitle: "First Todo",
             completed: false
         }
-    ]
+    ],
+    addTodo: (todoTitle) => { },
+    updateTodo: (todoTitle, id) => { },
+    deleteTodo: (id) => { },
+    toggleCompleted: (id) => { }
 });
 
 export const useTodo = () => {
